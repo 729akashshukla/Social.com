@@ -1,18 +1,24 @@
 import session from 'express-session';
 import MongoStore from 'connect-mongo';
 
-export default session({
-  secret: process.env.SESSION_SECRET,
+// Using object destructuring and shorthand
+const { SESSION_SECRET, MONGODB_URI, NODE_ENV } = process.env;
+
+const ONE_DAY = 24 * 60 * 60;
+const ONE_DAY_MS = ONE_DAY * 1000;
+
+const sessionConfig = {
+  secret: SESSION_SECRET,
   resave: false,
   saveUninitialized: false,
   store: MongoStore.create({
-    mongoUrl: process.env.MONGODB_URI,
-    ttl: 14 * 24 * 60 * 60 // 14 days
+    mongoUrl: MONGODB_URI,
+    ttl: ONE_DAY
   }),
   cookie: {
-    sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
-    secure: process.env.NODE_ENV === 'production',
-    httpOnly: true,
-    maxAge: 1000 * 60 * 60 * 24 // 1 day
+    secure: NODE_ENV === 'production',
+    maxAge: ONE_DAY_MS
   }
-});
+};
+
+export default sessionConfig;

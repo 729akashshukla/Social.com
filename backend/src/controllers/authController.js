@@ -1,203 +1,175 @@
-import { generateOTP, sendOTPEmail } from '../utils/otp';
-import User from '../models/User.js';
-import logger from '../helpers/logger.js';
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
+import  User  from '../models/User.js';
+import { OTPManager } from '../utils/otpGenerator.js';
+import { sendEmailOTP } from '../services/emailService.js';
+import { sendSMS } from '../services/smsService.js';
+import { asyncHandler } from '../helpers/asyncHandler.js';
 import ApiError from '../helpers/errors/ApiError.js';
-import { asyncHandler } from '../helpers/async/asyncHandler.js';
-import speakeasy from 'speakeasy';
-import twilio from 'twilio';
 
 
-const twilioClient = twilio(process.env.TWILIO_SID, process.env.TWILIO_TOKEN);
+export const registerUser = asyncHandler(async (req, res) => {
+  const { email, password, phone, firstName } = req.body;
+  
+  
+  const existingUser = await User.findOne({ $or: [{ email }, { phone }] });
+  if (existingUser) throw new ApiError(400, 'User already exists');
 
-// Regular Registration
-export const startRegistration = async (req, res) => {
-  try {
-    const { email } = req.body;
-    const otp = generateOTP();
-    
-    // Save OTP to user (pre-registration)
-    await User.findOneAndUpdate(
-      { email },
-      { otp, otpExpires: Date.now() + 600000 },
-      { upsert: true, new: true }
-    );
 
-    await sendOTPEmail(email, otp);
-    res.json({ message: 'OTP sent successfully' });
-  } catch (error) {
-    logger.error('User creation failed', {
-        error: error.message,
-        stack: error.stack,
-        inputData: req.body
-      });
-    res.status(400).json({ error: error.message });
+  const hashedPassword = await bcrypt.hash(password, 12);
+
+
+  const user = await User.create({
+    email,
+    password: hashedPassword,
+    phone,
+    firstName,
+    authMethod: 'email'
+  });
+
+  
+  const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
+    expiresIn: '7d'
+  });
+
+  res.status(201).json({ user: user.toProfileJSON(), token });
+});
+
+
+export const loginWithPassword = asyncHandler(async (req, res) => {
+  const { identifier, password } = req.body;
+  
+  const user = await User.findOne({
+    $or: [{ email: identifier }, { username: identifier }]
+  }).select('+password');
+
+  if (!user || !(await bcrypt.compare(password, user.password))) {
+    throw new ApiError(401, 'Invalid credentials');
   }
-};
-export const completeRegistration = async (req, res) => {
-  try {
-    const { otp, ...userData } = req.body;
-    
-    const user = await User.findOne({
-      email: userData.email,
-      otp,
-      otpExpires: { $gt: Date.now() }
-    });
 
-    if (!user) throw new Error('Invalid or expired OTP');
+  const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
+  res.json({ user: user.toProfileJSON(), token });
+});
 
-    const newUser = await User.create({
-      ...userData,
-      verified: true,
-      otp: undefined,
-      otpExpires: undefined
-    });
 
-    res.status(201).json(newUser);
-  } catch (error) {
-    logger.error('complete resgistration failed', {
-        error: error.message,
-        stack: error.stack,
-        inputData: req.body
-      });
-    res.status(400).json({ error: error.message });
+export const requestOTP = asyncHandler(async (req, res) => {
+  const { email, phone } = req.body;
+  const user = await User.findOne({ $or: [{ email }, { phone }] });
+  
+  if (!user) throw new ApiError(404, 'User not found');
+  
+  const otp = OTPManager.generateOTP(email || phone);
+  user.otp = await bcrypt.hash(otp, 10);
+  user.otpExpires = Date.now() + 10 * 60 * 1000; // 10 minutes
+  await user.save();
+
+  // Send OTP
+  if (email) {
+    await sendEmailOTP(email, otp);
+  } else {
+    await sendSMS(phone, otp);
   }
-};
-// Google OAuth Completion
-export const completeGoogleRegistration = async (req, res) => {
-  try {
-    const user = await User.findByIdAndUpdate(
-      req.user.id,
-      { ...req.body, registrationComplete: true },
-      { new: true }
-    );
-    res.json(user);
-  } catch (error) {
-    logger.error('complete Google registration failed', {
-        error: error.message,
-        stack: error.stack,
-        inputData: req.body
-      });
-    res.status(400).json({ error: error.message });
-  }
-};
-// Common login handler
-const handleLogin = (user) => {
-    if (user.failedLoginAttempts >= 5 && new Date() < user.accountLockedUntil) {
-      throw new ApiError(403, 'Account temporarily locked');
-    }
-  
-    const token = generateJWT(user);
-    return {
-      user: user.toProfileJSON(),
-      token
-    };
-  };
-  // Password-based login
-  export const passwordLogin = asyncHandler(async (req, res) => {
-    const { identifier, password } = req.body;
-    
-    const user = await User.findOne({
-      $or: [{ email: identifier }, { username: identifier }]
-    });
-  
-    if (!user || !(await user.comparePassword(password))) {
-      await User.findByIdAndUpdate(user?._id, {
-        $inc: { failedLoginAttempts: 1 },
-        accountLockedUntil: Date.now() + 15*60*1000 // 15 min lock
-      });
-      throw new ApiError(401, 'Invalid credentials');
-    }
-  
-    const result = handleLogin(user);
-    res.json(result);
-  });
-  // OTP Request
-  export const requestOTP = asyncHandler(async (req, res) => {
-    const { email, phone } = req.body;
-    const otp = speakeasy.totp({ secret: process.env.OTP_SECRET, digits: 6 });
-    
-    const updateData = {
-      loginOTP: await bcrypt.hash(otp, 10),
-      otpExpires: Date.now() + 10*60*1000, // 10 minutes
-      otpMethod: email ? 'email' : 'sms'
-    };
-  
-    const user = await User.findOneAndUpdate(
-      { [email ? 'email' : 'phone']: email || phone },
-      updateData,
-      { new: true }
-    );
-  
-    if (!user) throw new ApiError(404, 'User not found');
-  
-    // Send OTP
-    if (email) {
-      await sendEmailOTP(email, otp);
-    } else {
-      await sendSMSOTP(phone, otp);
-    }
-  
-    res.json({ message: 'OTP sent successfully' });
-  });
-  // OTP Verification
-  export const verifyOTP = asyncHandler(async (req, res) => {
-    const { email, phone, otp } = req.body;
-    const user = await User.findOne(email ? { email } : { phone });
-    
-    if (!user || !user.loginOTP) throw new ApiError(404, 'Invalid request');
-    if (Date.now() > user.otpExpires) throw new ApiError(401, 'OTP expired');
-  
-    const isValid = await bcrypt.compare(otp, user.loginOTP);
-    if (!isValid) throw new ApiError(401, 'Invalid OTP');
-  
-    const result = handleLogin(user);
-    
-    // Reset OTP fields
-    user.loginOTP = undefined;
-    user.otpExpires = undefined;
-    await user.save();
-  
-    res.json(result);
-  });
 
-  export const requestPasswordReset = asyncHandler(async (req, res) => {
-    const { email, phone } = req.body;
-    const user = await User.findOne({ $or: [{ email }, { phone }] });
-    
-    if (!user) throw new ApiError(404, 'User not found');
-    
-    const otp = generateOTP();
-    const resetMethod = email ? 'email' : 'sms';
-    
-    user.resetPasswordOTP = await bcrypt.hash(otp, 10);
-    user.resetPasswordExpires = Date.now() + 15*60*1000; // 15 minutes
-    user.resetMethod = resetMethod;
-    await user.save();
+  res.json({ message: 'OTP sent successfully' });
+});
+
+
+export const verifyUserOTP = asyncHandler(async (req, res) => {
+  const { email, phone, otp } = req.body;
+  const user = await User.findOne({ $or: [{ email }, { phone }] });
   
-    if (email) {
-      await sendPasswordResetEmail(email, otp);
-    } else {
-      await sendPasswordResetSMS(phone, otp);
+  if (!user || !user.otp || !(await bcrypt.compare(otp, user.otp))) {
+    throw new ApiError(401, 'Invalid OTP');
+  }
+
+  if (Date.now() > user.otpExpires) {
+    throw new ApiError(401, 'OTP expired');
+  }
+
+  user.otp = undefined;
+  user.otpExpires = undefined;
+  await user.save();
+
+  const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
+  res.json({ user: user.toProfileJSON(), token });
+});
+
+
+export const requestPasswordReset = asyncHandler(async (req, res) => {
+  const { email, phone } = req.body;
+  const user = await User.findOne({ $or: [{ email }, { phone }] });
+  
+  if (!user) throw new ApiError(404, 'User not found');
+  
+  const resetToken = jwt.sign(
+    { userId: user._id }, 
+    process.env.JWT_RESET_SECRET,
+    { expiresIn: '15m' }
+  );
+
+  if (email) {
+    await sendPasswordResetEmail(email, resetToken);
+  } else {
+    await sendPasswordResetSMS(phone, resetToken);
+  }
+
+  res.json({ message: 'Reset instructions sent' });
+});
+
+export const resetPassword = asyncHandler(async (req, res) => {
+  const { token, newPassword } = req.body;
+  
+  const decoded = jwt.verify(token, process.env.JWT_RESET_SECRET);
+  const user = await User.findById(decoded.userId);
+  
+  if (!user) throw new ApiError(404, 'Invalid token');
+  
+  user.password = await bcrypt.hash(newPassword, 12);
+  await user.save();
+  
+  res.json({ message: 'Password updated successfully' });
+});
+
+
+export const googleAuth = passport.authenticate('google', {
+  scope: ['profile', 'email'],
+  session: false 
+});
+
+export const googleAuthCallback = asyncHandler(async (req, res, next) => {
+  passport.authenticate('google', async (err, user, info) => {
+    try {
+      if (err || !user) {
+        throw new ApiError(401, 'Google authentication failed');
+      }
+
+     
+      const existingUser = await User.findOneAndUpdate(
+        { googleId: user.googleId },
+        {
+          $set: {
+            email: user.email,
+            avatar: user.avatar,
+            lastName: user.lastName,
+            firstName: user.firstName
+          }
+        },
+        { new: true, upsert: true }
+      );
+
+      // Generate JWT token
+      const token = jwt.sign(
+        { userId: existingUser._id }, 
+        process.env.JWT_SECRET,
+        { expiresIn: '7d' }
+      );
+
+      // Redirect to frontend with token
+      const redirectUrl = `${process.env.CLIENT_URL}/auth/google/callback?token=${token}&userId=${existingUser._id}`;
+      res.redirect(redirectUrl);
+
+    } catch (error) {
+      next(error);
     }
-  
-    res.json({ message: 'OTP sent successfully' });
-  });
-  
-  export const resetPassword = asyncHandler(async (req, res) => {
-    const { email, phone, otp, newPassword } = req.body;
-    const user = await User.findOne({
-      $or: [{ email }, { phone }],
-      resetPasswordExpires: { $gt: Date.now() }
-    });
-  
-    if (!user || !(await bcrypt.compare(otp, user.resetPasswordOTP))) {
-      throw new ApiError(401, 'Invalid or expired OTP');
-    }
-  
-    user.password = newPassword;
-    user.resetPasswordOTP = undefined;
-    user.resetPasswordExpires = undefined;
-    await user.save();
-  
-    res.json({ message: 'Password reset successful' });
-  });
+  })(req, res, next);
+});

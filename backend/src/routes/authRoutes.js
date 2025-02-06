@@ -1,22 +1,29 @@
 import express from 'express';
-import  passwordResetLimiter  from '../utils/rateLimit';
-
- 
-const router = express.Router();
+import { asyncHandler } from '../helpers/asyncHandler.js';
+import { passwordResetLimiter } from '../middlewares/rateLimit.js';
 import {
-    startRegistration,
-    verifyOTP,
-    completeRegistration,
-    handleGoogleAuth
-  } from '../controllers/authController';
-  
-  router.post('/register/start', startRegistration);
-  router.post('/register/verify', verifyOTP);
-  router.post('/register/complete', completeRegistration);
-  router.get('/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
-  router.get('/google/callback', handleGoogleAuth);
-  router.post('/login/password', passwordLogin);
-  router.post('/login/otp-request', requestOTP);
-  router.post('/login/otp-verify', verifyOTP);
-router.post('/reset-password', resetPassword);
-router.post('/forgot-password', passwordResetLimiter, requestPasswordReset);
+  registerUser,
+  loginWithPassword,
+  requestOTP,
+  verifyOTP,
+  requestPasswordReset,
+  resetPassword,
+  googleAuth,
+  googleAuthCallback,
+  logoutUser
+} from '../controllers/authController.js';
+
+const router = express.Router();
+
+
+router.post('/register', asyncHandler(registerUser));
+router.post('/login/password', asyncHandler(loginWithPassword));
+router.post('/login/otp-request', asyncHandler(requestOTP));
+router.post('/login/otp-verify', asyncHandler(verifyOTP));
+router.post('/forgot-password', passwordResetLimiter, asyncHandler(requestPasswordReset));
+router.post('/reset-password', asyncHandler(resetPassword));
+router.get('/google', asyncHandler(googleAuth));
+router.get('/google/callback', asyncHandler(googleAuthCallback));
+router.post('/logout', asyncHandler(logoutUser));
+
+export default router;

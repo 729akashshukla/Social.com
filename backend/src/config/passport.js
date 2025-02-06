@@ -1,39 +1,54 @@
 import passport from 'passport';
 import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
+import { Strategy as JwtStrategy, ExtractJwt } from 'passport-jwt';
 import User from '../models/User.js';
 
-passport.use(new GoogleStrategy({
-  clientID: process.env.GOOGLE_CLIENT_ID,
-  clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  callbackURL: '/auth/google/callback'
-}, async (accessToken, refreshToken, profile, done) => {
-  try {
-    let user = await User.findOne({ googleId: profile.id });
-    
-    if (!user) {
-      user = await User.create({
-        googleId: profile.id,
-        email: profile.emails[0].value,
-        displayName: profile.displayName
-      });
-    }
-    
-    return done(null, user);
-  } catch (error) {
-    return done(error, null);
-  }
-}));
+const opts = {
+  jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+  secretOrKey: process.env.JWT_SECRET
+};
 
 
-passport.serializeUser((user, done) => {
-    done(null, user.id);
-  });
-  
-  passport.deserializeUser(async (id, done) => {
+passport.use(
+  new JwtStrategy(opts, async (jwt_payload, done) => {
     try {
-      const user = await User.findById(id);
-      done(null, user);
+      const user = await User.findById(jwt_payload.id);
+      return user ? done(null, user) : done(null, false);
     } catch (error) {
-      done(error, null);
+      return done(error, false);
     }
-  });
+  })
+);
+
+passport.use(
+  new GoogleStrategy(
+    {
+      clientID: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+      callbackURL: '/api/auth/google/callback'
+    },
+    async (accessToken, refreshToken, profile, done) => {
+      try {
+        
+        const { emails, displayName, id } = profile;
+        const email = emails?.[0]?.value;
+
+        let user = await User.findOne({ email });
+        
+        if (!user) {
+          user = await User.create({
+            email,
+            name: displayName,
+            googleId: id
+          });
+        }
+        
+        return done(null, user);
+      } catch (error) {
+        return done(error, null);
+      }
+    }
+  )
+);
+
+export default passport;
