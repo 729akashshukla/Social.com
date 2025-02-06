@@ -12,7 +12,7 @@ import authRoutes from './routes/authRoutes.js';
 import userRoutes from './routes/userRoutes.js';
 import statusRoutes from './routes/statusRoutes.js';
 import streakRoutes from './routes/streakRoutes.js';
-import  errorHandler  from './helpers/errors/errorHandler.js';
+import  {errorHandler}  from './helpers/errors/errorHandler.js';
 
 const app = express();
 

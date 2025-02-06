@@ -1,12 +1,11 @@
-import { config } from 'dotenv';
+import dotenv from 'dotenv';
 import http from 'http';
 import app from './app.js';
-
 import connectDB from './config/db.js';
-import logger from './helpers/logger.js';
+import {logger} from './helpers/logger.js';
 
 
-config();
+dotenv.config();
 
 
 process.on('uncaughtException', err => {

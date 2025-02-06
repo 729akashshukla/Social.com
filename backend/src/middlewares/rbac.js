@@ -1,4 +1,4 @@
-import { ApiError } from '../helpers/errors/ApiError.js';
+import ApiError  from '../helpers/errors/ApiError.js';
 import { asyncHandler } from '../helpers/asyncHandler.js';
 
 export const ROLES = {

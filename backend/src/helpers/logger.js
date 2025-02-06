@@ -44,30 +44,30 @@ export const logger = winston.createLogger({
   transports
 });
 
-// src/helpers/asyncHandler.js
-export const asyncHandler = (fn) => {
-  return (req, res, next) => {
-    Promise.resolve(fn(req, res, next)).catch(next);
-  };
-};
+// // src/helpers/asyncHandler.js
+// export const asyncHandler = (fn) => {
+//   return (req, res, next) => {
+//     Promise.resolve(fn(req, res, next)).catch(next);
+//   };
+// };
 
-// Example usage of async handler with more complex error capture
-export const asyncHandlerWithRetry = (fn, retries = 3) => {
-  return async (req, res, next) => {
-    let lastError;
+// // Example usage of async handler with more complex error capture
+// export const asyncHandlerWithRetry = (fn, retries = 3) => {
+//   return async (req, res, next) => {
+//     let lastError;
 
-    for (let attempt = 0; attempt < retries; attempt++) {
-      try {
-        return await fn(req, res, next);
-      } catch (error) {
-        lastError = error;
-        if (error instanceof ApiError) {
-          break;
-        }
-        await new Promise(resolve => setTimeout(resolve, 1000 * attempt));
-      }
-    }
+//     for (let attempt = 0; attempt < retries; attempt++) {
+//       try {
+//         return await fn(req, res, next);
+//       } catch (error) {
+//         lastError = error;
+//         if (error instanceof ApiError) {
+//           break;
+//         }
+//         await new Promise(resolve => setTimeout(resolve, 1000 * attempt));
+//       }
+//     }
 
-    next(lastError);
-  };
-};
+//     next(lastError);
+//   };
+// };

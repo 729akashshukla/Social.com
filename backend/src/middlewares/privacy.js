@@ -1,7 +1,8 @@
-import { ApiError } from '../helpers/errors/ApiError.js';
+import ApiError  from '../helpers/errors/ApiError.js';
 import { asyncHandler } from '../helpers/asyncHandler.js';
-import { User } from '../models/User.js';
-import { Status } from '../models/Status.js';
+import  User  from '../models/User.js';
+import Status from '../models/Status.js';
+
 
 export const PRIVACY_LEVELS = {
   PUBLIC: 'public',
@@ -81,3 +82,29 @@ export const checkStatusVisibility = asyncHandler(async (req, res, next) => {
 
   throw new ApiError(403, 'You do not have permission to view this status');
 });
+
+export const checkProfileAccess = (user) => {
+  
+  if (!user) return { allowed: false, reason: 'No user data' };
+
+
+  const { 
+      isBanned = false, 
+      role = 'user', 
+      isActive = false 
+  } = user;
+
+
+  const privilegedRoles = ['admin', 'moderator'];
+
+  if (isBanned) return { allowed: false, reason: 'Banned' };
+  if (!isActive) return { allowed: false, reason: 'Inactive' };
+  if (privilegedRoles.includes(role)) return { allowed: true, reason: 'Privileged' };
+
+ 
+  return { allowed: true, reason: 'Standard access' };
+};
+
+
+const currentUser = { isBanned: false, role: 'user', isActive: true };
+console.log(checkProfileAccess(currentUser))

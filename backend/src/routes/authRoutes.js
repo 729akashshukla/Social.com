@@ -5,7 +5,7 @@ import {
   registerUser,
   loginWithPassword,
   requestOTP,
-  verifyOTP,
+  verifyUserOTP,
   requestPasswordReset,
   resetPassword,
   googleAuth,
@@ -19,7 +19,7 @@ const router = express.Router();
 router.post('/register', asyncHandler(registerUser));
 router.post('/login/password', asyncHandler(loginWithPassword));
 router.post('/login/otp-request', asyncHandler(requestOTP));
-router.post('/login/otp-verify', asyncHandler(verifyOTP));
+router.post('/login/otp-verify', asyncHandler(verifyUserOTP));
 router.post('/forgot-password', passwordResetLimiter, asyncHandler(requestPasswordReset));
 router.post('/reset-password', asyncHandler(resetPassword));
 router.get('/google', asyncHandler(googleAuth));

@@ -1,15 +1,15 @@
 import express from 'express';
 import { asyncHandler } from '../helpers/asyncHandler.js';
-import { authMiddleware, checkRole } from '../middlewares/auth.js';
+import { checkRole } from '../middlewares/rbac.js';
 
 import {
-  getUserProfile,
-  updateUserProfile,
+ 
+  updateProfile,
   updatePassword,
   updateAvatar,
-  updatePrivacySettings,
-  updateThemePreference,
-  getAllUsers 
+  updatePrivacy,
+  updateTheme,
+
 } from '../controllers/userController.js';
 import { verifyToken } from '../middlewares/auth.js';
 import { isAdmin }  from '../middlewares/rbac.js';
@@ -28,11 +28,11 @@ router.post('/login', loginLimiter, authController.login);
 router.get('/admin/users', verifyToken, isAdmin, userController.getAllUsers);
 
 router.get('/profile', asyncHandler(getUserProfile));
-router.patch('/profile', asyncHandler(updateUserProfile));
+router.patch('/profile', asyncHandler(updateProfile));
 router.patch('/password', asyncHandler(updatePassword));
 router.patch('/avatar', uploadAvatar, asyncHandler(updateAvatar));
-router.patch('/privacy', asyncHandler(updatePrivacySettings));
-router.patch('/theme', asyncHandler(updateThemePreference));
+router.patch('/privacy', asyncHandler(updatePrivacy ));
+router.patch('/theme', asyncHandler(updateTheme));
 router.get('/admin/users', checkRole(['admin']), asyncHandler(getAllUsers));
 
 export default router;

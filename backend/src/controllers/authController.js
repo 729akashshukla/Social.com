@@ -35,7 +35,6 @@ export const registerUser = asyncHandler(async (req, res) => {
   res.status(201).json({ user: user.toProfileJSON(), token });
 });
 
-
 export const loginWithPassword = asyncHandler(async (req, res) => {
   const { identifier, password } = req.body;
   
@@ -50,7 +49,6 @@ export const loginWithPassword = asyncHandler(async (req, res) => {
   const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
   res.json({ user: user.toProfileJSON(), token });
 });
-
 
 export const requestOTP = asyncHandler(async (req, res) => {
   const { email, phone } = req.body;
@@ -72,7 +70,6 @@ export const requestOTP = asyncHandler(async (req, res) => {
   res.json({ message: 'OTP sent successfully' });
 });
 
-
 export const verifyUserOTP = asyncHandler(async (req, res) => {
   const { email, phone, otp } = req.body;
   const user = await User.findOne({ $or: [{ email }, { phone }] });
@@ -92,7 +89,6 @@ export const verifyUserOTP = asyncHandler(async (req, res) => {
   const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET);
   res.json({ user: user.toProfileJSON(), token });
 });
-
 
 export const requestPasswordReset = asyncHandler(async (req, res) => {
   const { email, phone } = req.body;
@@ -128,7 +124,6 @@ export const resetPassword = asyncHandler(async (req, res) => {
   
   res.json({ message: 'Password updated successfully' });
 });
-
 
 export const googleAuth = passport.authenticate('google', {
   scope: ['profile', 'email'],
@@ -172,3 +167,11 @@ export const googleAuthCallback = asyncHandler(async (req, res, next) => {
     }
   })(req, res, next);
 });
+
+export const logoutUser = (req, res) => {
+  req.logout((err) => {
+    if (err) return res.status(500).json({ message: "Logout failed" });
+    req.session.destroy();
+    res.status(200).json({ message: "Logged out successfully" });
+  });
+};

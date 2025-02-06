@@ -1,7 +1,8 @@
 import jwt from 'jsonwebtoken';
-import { ApiError } from '../helpers/errors/ApiError.js';
+import ApiError from '../helpers/errors/ApiError.js';
+
 import { asyncHandler } from '../helpers/asyncHandler.js';
-import { User } from '../models/User.js';
+import  User  from '../models/User.js';
 
 export const verifyToken = asyncHandler(async (req, res, next) => {
   const token = req.headers.authorization?.split(' ')[1] || 
@@ -33,3 +34,4 @@ export const verifyToken = asyncHandler(async (req, res, next) => {
     throw error;
   }
 });
+

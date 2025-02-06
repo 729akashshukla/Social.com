@@ -36,6 +36,15 @@ const emailTemplates = {
       <h1>Keep Going ${username}!</h1>
       <p>You're on a ${streakCount} day streak! Keep up the great work!</p>
     `
+  }),
+  otpEmailTemplate : (username, otp) => ({
+    subject: 'Password Reset OTP',
+    html: `
+      <h1>Password Reset</h1>
+      <p>Hi ${username},</p>
+      <p>Your OTP for password reset is: <strong>${otp}</strong></p>
+      <p>This OTP will expire in 15 minutes.</p>
+    `
   })
 };
 

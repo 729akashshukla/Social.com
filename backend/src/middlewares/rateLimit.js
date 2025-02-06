@@ -32,3 +32,9 @@ export const apiLimiter = createRateLimiter({
   max: 100, // 100 requests
   keyPrefix: 'api:'
 });
+
+export const passwordResetLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 5, // 5 requests per window
+  message: "Too many password reset attempts, please try again later",
+}); 
