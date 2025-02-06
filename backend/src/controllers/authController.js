@@ -63,7 +63,6 @@ export const requestOTP = asyncHandler(async (req, res) => {
   user.otpExpires = Date.now() + 10 * 60 * 1000; // 10 minutes
   await user.save();
 
-  // Send OTP
   if (email) {
     await sendEmailOTP(email, otp);
   } else {
