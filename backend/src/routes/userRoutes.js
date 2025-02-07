@@ -1,38 +1,34 @@
 import express from 'express';
 import { asyncHandler } from '../helpers/asyncHandler.js';
 import { checkRole } from '../middlewares/rbac.js';
-
+import { avatarUpload, imageUpload } from '../helpers/uploads/fileUpload.js';
+import { uploadAvatar,uploadImages } from '../controllers/userController.js';
 import {
- 
   updateProfile,
   updatePassword,
-  updateAvatar,
   updatePrivacy,
   updateTheme,
-
+  getProfile,
 } from '../controllers/userController.js';
 import { verifyToken } from '../middlewares/auth.js';
-import { isAdmin }  from '../middlewares/rbac.js';
-import { apiLimiter }  from '../middlewares/rateLimit.js';
+import { isAdmin } from '../middlewares/rbac.js';
+import { apiLimiter } from '../middlewares/rateLimit.js';
 import { checkProfileAccess } from '../middlewares/privacy.js';
-
+import { loginWithPassword } from '../controllers/authController.js';
 
 const router = express.Router();
 
+router.use(verifyToken);
 
-router.use(authMiddleware);
-
-
-router.get('/profile/:userId', verifyToken, checkProfileAccess, userController.getProfile);
-router.post('/login', loginLimiter, authController.login);
-router.get('/admin/users', verifyToken, isAdmin, userController.getAllUsers);
-
-router.get('/profile', asyncHandler(getUserProfile));
-router.patch('/profile', asyncHandler(updateProfile));
-router.patch('/password', asyncHandler(updatePassword));
-router.patch('/avatar', uploadAvatar, asyncHandler(updateAvatar));
-router.patch('/privacy', asyncHandler(updatePrivacy ));
-router.patch('/theme', asyncHandler(updateTheme));
-router.get('/admin/users', checkRole(['admin']), asyncHandler(getAllUsers));
+router.get('/profile/:userId', checkProfileAccess, getProfile);
+router.post('/login', loginWithPassword);
+router.get('/admin/users', checkRole(['admin']), asyncHandler(getProfile));
+router.get('/profile', asyncHandler(getProfile)); 
+router.patch('/profile/updateProfile/:userId', asyncHandler(updateProfile));
+router.patch('/password/updatePassword/:userId', asyncHandler(updatePassword));
+router.post('/profile/avatar/:userId',avatarUpload.single('avatar'), uploadAvatar);
+router.post('/profile/images/:userId', imageUpload.array('images', 4), uploadImages);
+router.patch('/privacy/:userId', asyncHandler(updatePrivacy));
+router.patch('/theme/:userId', asyncHandler(updateTheme));
 
 export default router;

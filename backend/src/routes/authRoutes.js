@@ -5,12 +5,12 @@ import {
   registerUser,
   loginWithPassword,
   requestOTP,
-  verifyUserOTP,
   requestPasswordReset,
   resetPassword,
   googleAuth,
   googleAuthCallback,
-  logoutUser
+  logoutUser,
+  verifyUserOTP
 } from '../controllers/authController.js';
 
 const router = express.Router();

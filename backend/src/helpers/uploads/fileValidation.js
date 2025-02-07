@@ -1,4 +1,4 @@
-import { ApiError } from '../errors/ApiError.js';
+import  ApiError  from '../errors/ApiError.js';
 
 const MB = 1024 * 1024;
 
@@ -56,3 +56,4 @@ export const validateFiles = (files, type = 'image') => {
   files.forEach(file => validateFile(file, type));
   return true;
 };
+

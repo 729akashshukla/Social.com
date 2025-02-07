@@ -1,5 +1,14 @@
 import winston from 'winston';
+import fs from 'fs';
+import path from 'path';
 
+
+const logDirectory = path.join(new URL('.', import.meta.url).pathname, 'logs');
+
+
+if (!fs.existsSync(logDirectory)) {
+  fs.mkdirSync(logDirectory, { recursive: true });
+}
 const levels = {
   error: 0,
   warn: 1,
@@ -9,10 +18,10 @@ const levels = {
 };
 
 const colors = {
-  error: 'red',
+  error: 'magenta',
   warn: 'yellow',
   info: 'green',
-  http: 'magenta',
+  http: 'red',
   debug: 'blue'
 };
 
@@ -27,13 +36,23 @@ const format = winston.format.combine(
 );
 
 const transports = [
-  new winston.transports.Console(),
-  new winston.transports.File({
-    filename: 'logs/error.log',
-    level: 'error'
+  new winston.transports.Console({
+    level: 'debug',  // To print all levels (error, warn, info, debug)
+    format: winston.format.combine(
+      winston.format.colorize(),
+      winston.format.printf(
+        (info) => `${info.timestamp} ${info.level}: ${info.message}`
+      )
+    ),
+    // Ensure console output always shows all levels (no filtering based on level)
+    silent: false // Remove this line if you want the console to behave as expected for all environments
   }),
   new winston.transports.File({
-    filename: 'logs/all.log'
+    filename: 'logs/error.log',
+    level: 'error' // Logs error level messages to a file
+  }),
+  new winston.transports.File({
+    filename: 'logs/all.log' // Logs all levels to a file
   })
 ];
 
@@ -43,31 +62,3 @@ export const logger = winston.createLogger({
   format,
   transports
 });
-
-// // src/helpers/asyncHandler.js
-// export const asyncHandler = (fn) => {
-//   return (req, res, next) => {
-//     Promise.resolve(fn(req, res, next)).catch(next);
-//   };
-// };
-
-// // Example usage of async handler with more complex error capture
-// export const asyncHandlerWithRetry = (fn, retries = 3) => {
-//   return async (req, res, next) => {
-//     let lastError;
-
-//     for (let attempt = 0; attempt < retries; attempt++) {
-//       try {
-//         return await fn(req, res, next);
-//       } catch (error) {
-//         lastError = error;
-//         if (error instanceof ApiError) {
-//           break;
-//         }
-//         await new Promise(resolve => setTimeout(resolve, 1000 * attempt));
-//       }
-//     }
-
-//     next(lastError);
-//   };
-// };
