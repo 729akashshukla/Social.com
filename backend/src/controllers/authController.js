@@ -1,14 +1,52 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import User from '../models/User.js';
-import passport from 'passport'; 
+import passport from 'passport';
 import { OTPManager } from '../utils/otpGenerator.js';
 import { sendEmailOTP } from '../services/emailService.js';
 import { sendSMS } from '../services/smsService.js';
 import { asyncHandler } from '../helpers/asyncHandler.js';
 import ApiError from '../helpers/errors/ApiError.js';
-import { logger } from '../helpers/logger.js'; // Importing the logger
+import { logger } from '../helpers/logger.js';
 
+/**
+ * @swagger
+ * /register:
+ *   post:
+ *     summary: Register a new user
+ *     description: Creates a new user and returns a JWT token
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *               password:
+ *                 type: string
+ *               phone:
+ *                 type: string
+ *               firstName:
+ *                 type: string
+ *     responses:
+ *       201:
+ *         description: User successfully registered
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 user:
+ *                   type: object
+ *                 token:
+ *                   type: string
+ *       400:
+ *         description: User already exists
+ *       500:
+ *         description: Internal Server Error
+ */
 export const registerUser = asyncHandler(async (req, res) => {
   try {
     const { email, password, phone, firstName } = req.body;
@@ -37,6 +75,40 @@ export const registerUser = asyncHandler(async (req, res) => {
   }
 });
 
+/**
+ * @swagger
+ * /login:
+ *   post:
+ *     summary: Log in a user with email/username and password
+ *     description: Logs in a user and returns a JWT token
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               identifier:
+ *                 type: string
+ *               password:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: User successfully logged in
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 user:
+ *                   type: object
+ *                 token:
+ *                   type: string
+ *       401:
+ *         description: Invalid credentials
+ *       500:
+ *         description: Internal Server Error
+ */
 export const loginWithPassword = asyncHandler(async (req, res) => {
   try {
     const { identifier, password } = req.body;
@@ -57,6 +129,31 @@ export const loginWithPassword = asyncHandler(async (req, res) => {
   }
 });
 
+/**
+ * @swagger
+ * /otp-request:
+ *   post:
+ *     summary: Request an OTP for user verification
+ *     description: Sends an OTP to email or phone for verification
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *               phone:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: OTP sent successfully
+ *       404:
+ *         description: User not found
+ *       500:
+ *         description: Internal Server Error
+ */
 export const requestOTP = asyncHandler(async (req, res) => {
   try {
     const { email, phone } = req.body;
@@ -82,6 +179,42 @@ export const requestOTP = asyncHandler(async (req, res) => {
   }
 });
 
+/**
+ * @swagger
+ * /verify-otp:
+ *   post:
+ *     summary: Verify OTP for user
+ *     description: Verifies OTP for email or phone and returns a JWT token
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *               phone:
+ *                 type: string
+ *               otp:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: OTP verified successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 user:
+ *                   type: object
+ *                 token:
+ *                   type: string
+ *       401:
+ *         description: Invalid OTP
+ *       500:
+ *         description: Internal Server Error
+ */
 export const verifyUserOTP = asyncHandler(async (req, res) => {
   try {
     const { email, phone, otp } = req.body;
@@ -106,6 +239,8 @@ export const verifyUserOTP = asyncHandler(async (req, res) => {
     res.status(500).send('Internal Server Error');
   }
 });
+
+// Continue similarly for other routes like resetPassword, googleAuth, etc.
 
 export const requestPasswordReset = asyncHandler(async (req, res) => {
   try {

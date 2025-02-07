@@ -15,35 +15,22 @@ import streakRoutes from './routes/streakRoutes.js';
 import { errorHandler } from './helpers/errors/errorHandler.js';
 import { logger } from './helpers/logger.js';  // Importing logger
 import apiDocsRoute from "./apiDocs.js";
-import swaggerJsdoc from "swagger-jsdoc";
-import swaggerUi from "swagger-ui-express";
+import swaggerUi from 'swagger-ui-express';
+import swaggerSpec from './swagger.js'; 
+import path from 'path';
+import { fileURLToPath } from 'url';
+import favicon from 'serve-favicon';
 
 
 const app = express();
 
-const options = {
-  definition: {
-    openapi: "3.0.0",
-    info: {
-      title: "API Documentation",
-      version: "1.0.0",
-      description: "API documentation for my app",
-    },
-  },
-  apis: ["./src/routes/*.js"], // Define your API routes here
-};
-
-// Generate Swagger Specification
-const swaggerSpec = swaggerJsdoc(options);
-
-// Serve the OpenAPI JSON file dynamically
-app.get("/openapi.json", (req, res) => {
+app.get('/openapi.json', (req, res) => {
   res.json(swaggerSpec);
 });
-
-
-app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(helmet({
   contentSecurityPolicy: process.env.NODE_ENV === 'production' ? undefined : false
 }));

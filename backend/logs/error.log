@@ -72,3 +72,989 @@
 [35m  path: '/favicon.ico',[39m
 [35m  method: 'GET'[39m
 [35m}[39m
+2025-02-07 06:25:27 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 06:25:27 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:99:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 06:25:28 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 06:25:28 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:99:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 06:34:46 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 06:34:46 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:78:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 06:43:27 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 06:43:27 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:78:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 06:43:28 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 06:43:28 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:78:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 06:43:28 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 06:43:28 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:78:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 06:46:02 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 06:46:02 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:78:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 06:46:03 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 06:46:03 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:78:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 06:46:39 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 06:46:39 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:78:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 06:48:56 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 06:48:56 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 06:49:03 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 06:49:03 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 06:49:04 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 06:49:04 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 06:51:02 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 06:51:02 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 06:54:53 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 06:54:53 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:00:14 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:00:14 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:06:34 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:06:34 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:07:14 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:07:14 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:07:23 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:07:23 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:07:32 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:07:32 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:07:34 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:07:34 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:07:35 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:07:35 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:07:36 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:07:36 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:07:36 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:07:36 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:07:37 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:07:37 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:07:37 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:07:37 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:07:43 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:07:43 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:07:52 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:07:52 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:07:55 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:07:55 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:00 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:00 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:01 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:01 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:05 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:05 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:06 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:06 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:07 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:07 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:08 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:08 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:08 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:08 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:08 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:08 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:10 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:10 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:11 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:11 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:12 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:12 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:12 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:12 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:13 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:13 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:14 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:14 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:16 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:16 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:17 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:17 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:17 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:17 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:08:17 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:08:17 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:09:17 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:09:17 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:11:16 [35merror[39m: [35m404 Error: Can't find /SocialsApiDocs on this server! - /SocialsApiDocs[39m
+2025-02-07 07:11:16 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /SocialsApiDocs on this server!",[39m
+[35m  stack: "Error: Can't find /SocialsApiDocs on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/SocialsApiDocs',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:11:16 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:11:16 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:11:48 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:11:48 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:11:59 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:11:59 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:12:00 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:12:00 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:12:01 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:12:01 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:12:02 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:12:02 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:12:03 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:12:03 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:12:49 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:12:49 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:12:53 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:12:53 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m
+2025-02-07 07:13:06 [35merror[39m: [35m404 Error: Can't find /favicon.ico on this server! - /favicon.ico[39m
+2025-02-07 07:13:06 [35merror[39m: [35m{[39m
+[35m  error: "Can't find /favicon.ico on this server!",[39m
+[35m  stack: "Error: Can't find /favicon.ico on this server!\n" +[39m
+[35m    '    at file:///Users/akash-mac/Developer/webdev/fullstack2/backend/src/app.js:84:15\n' +[39m
+[35m    '    at Layer.handle [as handle_request] (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/layer.js:95:5)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:149:13)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at next (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:145:7)\n' +[39m
+[35m    '    at Route.dispatch (/Users/akash-mac/Developer/webdev/fullstack2/backend/node_modules/express/lib/router/route.js:119:3)',[39m
+[35m  path: '/favicon.ico',[39m
+[35m  method: 'GET'[39m
+[35m}[39m

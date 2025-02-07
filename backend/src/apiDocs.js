@@ -15,7 +15,7 @@ router.get("/openapi.json", (req, res) => {
   
 
 // Serve the Redoc API documentation
-router.get("/ourapi-docs", redoc({
+router.get("/SocialsApiDocs", redoc({
   title: "API Documentation",
   specUrl: "/openapi.json" // Yeh correct path hai
 }));

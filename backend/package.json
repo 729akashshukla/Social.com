@@ -39,6 +39,7 @@
     "passport-jwt": "^4.0.1",
     "rate-limit-redis": "^4.2.0",
     "redoc-express": "^2.1.0",
+    "serve-favicon": "^2.5.0",
     "speakeasy": "^2.0.0",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",

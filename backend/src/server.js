@@ -26,7 +26,7 @@ const startServer = async () => {
     server.listen(PORT, () => {
       logger.info(`🚀 Server running in ${process.env.NODE_ENV} mode on port ${PORT}`);
       if (process.env.NODE_ENV === 'development') {
-        logger.info(`📜 API Docs available at http://localhost:${PORT}/api-docs`);
+        logger.info(`📜 API Docs available at http://localhost:${PORT}/SocialsApiDocs`);
       }
     });
 
