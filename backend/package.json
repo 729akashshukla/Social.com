@@ -27,6 +27,7 @@
     "express-session": "^1.18.1",
     "helmet": "^8.0.0",
     "ioredis": "^5.4.2",
+    "jsonwebtoken": "^9.0.2",
     "libphonenumber-js": "^1.11.19",
     "mongoose": "^8.9.7",
     "morgan": "^1.10.0",
